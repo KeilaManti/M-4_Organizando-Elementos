@@ -1,0 +1,149 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+/* Variables */
+:root {
+	/* Colores */
+	--amarillo: #EAC926;
+	--azul: #03264C;
+	--celeste: #1259c3;
+	--grisoscuro: #666;
+	--grisclaro: #ebebeb;
+	--verde: #39b54a;
+
+	/* Fuentes */
+	--fuentePrincipal: "roboto", sans-serif;
+	/* Tamaño Fuente*/
+	--parrafo: 12px;
+	--titulo: 24px;
+	--precios: 18px;
+	--descripcion: 16px;
+}
+
+/* Main */
+main {
+	width: 90%;
+}
+main .crearCuenta {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	margin-top: 20px;
+	padding: 20px 0 20px;
+	border-radius: 15px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+main .crearCuenta input {
+	width: 90%;
+	height: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 10px;
+	background-color: var(--grisclaro);
+	color: var(--grisoscuro);
+}
+main .crearCuenta .rolPerfil {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+main .crearCuenta .rolPerfil p {
+	width: 100%;
+	position: relative;
+	left: 25px;
+	margin-top: 10px;
+}
+main .crearCuenta .rolPerfil .radio {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	color: var(--grisoscuro);
+}
+main .crearCuenta .rolPerfil .radio input {
+	width: 13px;
+	padding-top: 15px;
+	border: solid 1px var(--grisclaro);
+	margin-right: 10px;
+	position: relative;
+	left: 4px;
+}
+main .crearCuenta .categorias {
+	width: 100%;
+	margin-top: 10px;
+}
+main .crearCuenta .categorias p {
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+	left: 25px;
+}
+main .crearCuenta .categorias .check {
+	display: flex;
+	position: relative;
+	left: 25px;
+	align-items: center;
+	color: var(--grisoscuro);
+}
+main .crearCuenta .categorias .check input {
+	width: 13px;
+	border: solid 1px var(--grisclaro);
+	margin-right: 10px;
+}
+main .crearCuenta .fileAvatar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+main .crearCuenta .fileAvatar input {
+	padding: 5px;
+}
+main .crearCuenta button {
+	width: 40%;
+	height: 30px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: var(--celeste);
+	color: white;
+}
+main .crearCuenta button:last-child {
+	margin-left: 10px;
+}
+main .crearCuenta hr {
+	width: 70%;
+	margin: 25px 0 25px;
+	background-color: var(--grisoscuro);
+}
+main .crearCuenta .enlace {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main .crearCuenta .enlace a {
+	color: var(--grisoscuro);
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+/* Medias Queries */
+/* Tablet */
+@media screen and (min-width: 625px) {
+	/* Main */
+	main .crearCuenta {
+		width: 70%;
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+		margin: 30px auto;
+	}
+}
+
+/* Escritorio */
+@media screen and (min-width: 769px) {
+	/* Main */
+	main .crearCuenta {
+		width: 40%;
+	}
+}
